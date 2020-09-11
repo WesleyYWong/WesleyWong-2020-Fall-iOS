@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "889BF0BD-D06F-4B45-9C9B-83BA3C797120"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "147ACE21-18E2-41C2-BF82-13E2DD9FEAEC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Assignment1/HomeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "turnOnButton(buttonNum:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "147ACE21-18E2-41C2-BF82-13E2DD9FEAEC - 2bd5c707448abf3b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Assignment1.HomeView.turnOnButton(buttonNum: Swift.Int) -&gt; ()"
+                  moduleName = "Assignment1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user180084/Desktop/Assignment1/Assignment1/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "87">
+               </Location>
+               <Location
+                  uuid = "147ACE21-18E2-41C2-BF82-13E2DD9FEAEC - 2bd5c707448abf3b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Assignment1.HomeView.turnOnButton(buttonNum: Swift.Int) -&gt; ()"
+                  moduleName = "Assignment1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user180084/Desktop/Assignment1/Assignment1/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "1712">
+               </Location>
+               <Location
+                  uuid = "147ACE21-18E2-41C2-BF82-13E2DD9FEAEC - 2bd5c707448abf3b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Assignment1.HomeView.turnOnButton(buttonNum: Swift.Int) -&gt; ()"
+                  moduleName = "Assignment1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user180084/Desktop/Assignment1/Assignment1/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "3395">
+               </Location>
+               <Location
+                  uuid = "147ACE21-18E2-41C2-BF82-13E2DD9FEAEC - 2bd5c707448abf3b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Assignment1.HomeView.turnOnButton(buttonNum: Swift.Int) -&gt; ()"
+                  moduleName = "Assignment1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user180084/Desktop/Assignment1/Assignment1/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "5078">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F28E57A5-D839-4B84-AF8D-391A7685C60D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Assignment1/HomeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "gameOver()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

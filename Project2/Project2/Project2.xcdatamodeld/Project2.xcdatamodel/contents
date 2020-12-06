@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17511" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="BeenThere" representedClassName="BeenThere" syncable="YES" codeGenerationType="class">
+        <attribute name="visited" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="GoThere" representedClassName="GoThere" syncable="YES" codeGenerationType="class">
+        <attribute name="want" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Locations" representedClassName="Locations" syncable="YES" codeGenerationType="class">
+        <attribute name="latitude" optional="YES" attributeType="String"/>
+        <attribute name="longitude" optional="YES" attributeType="String"/>
+        <relationship name="beenThere" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BeenThere"/>
+        <relationship name="goThere" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GoThere"/>
+    </entity>
+    <elements>
+        <element name="Locations" positionX="22" positionY="-212" width="128" height="103"/>
+        <element name="BeenThere" positionX="-164" positionY="-74" width="128" height="58"/>
+        <element name="GoThere" positionX="-54" positionY="9" width="128" height="58"/>
+    </elements>
+</model>

@@ -12,6 +12,9 @@ class ThirdViewController: UIViewController {
     @IBOutlet weak var LocationTable: UITableView!
     
     var locations: [Location] = []
+    var NLat: String = ""
+    var NLong: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,7 +25,44 @@ class ThirdViewController: UIViewController {
     
 
 }
+    @IBAction func addLocation(_ sender: Any) {
+        let alert = UIAlertController(title: "New Location",
+                                      message: "Add a new location",
+                                      preferredStyle: .alert)
+      
+        alert.addTextField { (Latitude) in
+            Latitude.text = ""
+            Latitude.placeholder = "Latitude:"
+        }
+        
+        alert.addTextField{ (Longitude) in
+            Longitude.text = ""
+            Longitude.placeholder = "Longitude:"
+        }
+        
+        let saveAction = UIAlertAction(title: "Save", style: .default) {[unowned self] _ in
+            let newlat = alert.textFields![0].text
+            let newlong = alert.textFields![1].text
+            appendArray(Latitude: newlat ?? "0.00", Longitude: newlong ?? "0.00")
+            
+        }
+        
+        let cancelAction = UIAlertAction(title:"Cancel", style: .cancel)
+        
+        
+        alert.addAction(saveAction)
+        alert.addAction(cancelAction)
+        present(alert, animated: true);
+        
+    }
     
+    func appendArray(Latitude:String, Longitude:String)
+    {
+        let newLocation = Location(Latitude: Latitude, Longitude: Longitude);
+        locations.append(newLocation);
+        LocationTable.reloadData();
+        
+    }
     func createArray() -> [Location] {
         var exampleLocation: [Location] = []
         

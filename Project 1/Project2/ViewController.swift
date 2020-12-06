@@ -41,7 +41,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBAction func getLocation(_ sender: Any	) {
         locationManager?.requestLocation();
         var latitude = String(format: "%f" , locationManager?.location?.coordinate.latitude ?? self.initialLocation.coordinate.latitude);
-        var longitude = String(format: "%f" , locationManager?.location?.coordinate.longitude ?? self.initialLocation.coordinate.longitude);
+        var longitude = String(format: "%f" , locationManager?.location?.coordinate.longitude ?? self.initialLocation.coordinate.longitude		);
         LatLabel.text = "Latitude: \(latitude)"
         LonLabel.text = "Longitude: \(longitude)"
         mapView.centerToLocation(locationManager?.location ?? self.initialLocation)

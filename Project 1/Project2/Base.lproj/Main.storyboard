@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -81,7 +82,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="asZ-dn-ORl">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="LocationCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="LocationCell" id="NrX-Au-J6q" customClass="LocationCell" customModule="Project2" customModuleProvider="target">
@@ -120,15 +121,31 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fi1-Pi-f9b">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Location List" largeTitleDisplayMode="always" id="dn9-Pm-lz2">
+                                        <barButtonItem key="rightBarButtonItem" title="add location" id="tBO-3y-ptN">
+                                            <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
+                                            <connections>
+                                                <action selector="addLocation:" destination="hID-rn-XvT" id="9pA-Bs-unf"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xOk-s7-uWJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="fi1-Pi-f9b" firstAttribute="leading" secondItem="xOk-s7-uWJ" secondAttribute="leading" id="5Aj-SN-cP8"/>
                             <constraint firstItem="asZ-dn-ORl" firstAttribute="centerX" secondItem="xOk-s7-uWJ" secondAttribute="centerX" id="G34-Vr-WDT"/>
+                            <constraint firstItem="fi1-Pi-f9b" firstAttribute="top" secondItem="xOk-s7-uWJ" secondAttribute="top" id="JGq-0L-BRE"/>
                             <constraint firstItem="asZ-dn-ORl" firstAttribute="leading" secondItem="xOk-s7-uWJ" secondAttribute="leading" id="MUg-21-CbP"/>
                             <constraint firstItem="xOk-s7-uWJ" firstAttribute="trailing" secondItem="asZ-dn-ORl" secondAttribute="trailing" id="TZW-8I-Roa"/>
-                            <constraint firstItem="asZ-dn-ORl" firstAttribute="top" secondItem="xOk-s7-uWJ" secondAttribute="top" id="cbI-fB-Bcy"/>
+                            <constraint firstItem="xOk-s7-uWJ" firstAttribute="trailing" secondItem="fi1-Pi-f9b" secondAttribute="trailing" id="bfE-by-9Ae"/>
                             <constraint firstItem="xOk-s7-uWJ" firstAttribute="bottom" secondItem="asZ-dn-ORl" secondAttribute="bottom" id="iJf-Nm-BAy"/>
+                            <constraint firstItem="asZ-dn-ORl" firstAttribute="top" secondItem="fi1-Pi-f9b" secondAttribute="bottom" id="m7g-Q6-HVT"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Table View" image="rectangle.and.pencil.and.ellipsis" catalog="system" id="tx0-qd-ymN"/>
@@ -218,6 +235,7 @@
     <resources>
         <image name="map" catalog="system" width="128" height="110"/>
         <image name="photo" catalog="system" width="128" height="93"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <image name="rectangle.and.pencil.and.ellipsis" catalog="system" width="128" height="81"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

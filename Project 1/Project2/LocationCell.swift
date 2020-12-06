@@ -14,7 +14,7 @@ class LocationCell: UITableViewCell {
     
     func setLocation(Location: Location){
         self.Longitutde.text = "Long: " + Location.Longitude;
-        self.Latitude.text = "Lat: " + Location.Longitude;
+        self.Latitude.text = "Lat: " + Location.Latitude	;
     }
     override func awakeFromNib() {
         super.awakeFromNib()

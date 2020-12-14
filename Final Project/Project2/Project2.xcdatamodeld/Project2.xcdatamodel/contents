@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17511" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="BeenThere" representedClassName="BeenThere" syncable="YES" codeGenerationType="class">
+        <attribute name="visited" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="GoThere" representedClassName="GoThere" syncable="YES" codeGenerationType="class">
+        <attribute name="want" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Level1Questions" representedClassName="Level1Questions" syncable="YES" codeGenerationType="class">
+        <attribute name="correctAnswer" optional="YES" attributeType="String"/>
+        <attribute name="questionText" optional="YES" attributeType="String"/>
+        <attribute name="wrongAnswer1" optional="YES" attributeType="String"/>
+        <attribute name="wrongAnswer2" optional="YES" attributeType="String"/>
+        <attribute name="wrongAnswer3" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Locations" representedClassName="Locations" syncable="YES" codeGenerationType="class">
+        <attribute name="latitude" optional="YES" attributeType="String"/>
+        <attribute name="longitude" optional="YES" attributeType="String"/>
+        <relationship name="beenThere" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BeenThere"/>
+        <relationship name="goThere" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GoThere"/>
+    </entity>
+    <entity name="UserProfile" representedClassName="UserProfile" syncable="YES" codeGenerationType="class">
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="score" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="BeenThere" positionX="-253" positionY="-333" width="128" height="58"/>
+        <element name="GoThere" positionX="-54" positionY="9" width="128" height="58"/>
+        <element name="Locations" positionX="22" positionY="-212" width="128" height="103"/>
+        <element name="UserProfile" positionX="-72" positionY="-90" width="128" height="88"/>
+        <element name="Level1Questions" positionX="-242" positionY="-24" width="128" height="118"/>
+    </elements>
+</model>
